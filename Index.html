@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syzy Technologies</title>
+    <link rel="icon" href="https://i0.wp.com/syzytechnologies.com/wp-content/uploads/2022/10/mission.png?fit=1046%2C977&ssl=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            min-width: 400px;
+            max-width: 800px;
+
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+
+        }
+        .navbar-toggler {
+            order: -1;
+        }
+        .navbar-brand {
+            flex-grow: 1;
+            text-align: center;
+        }
+        #brand {
+            /* border: 1px solid gray; */
+            padding: 10px;
+        }
+        .input-bottom-border {
+            border-radius: 0px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #08469e;
+        }
+
+
+        /* For mobile phones  */
+        @media (max-width: 767px) {
+            .navbar-collapse {
+                text-align: left;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+            }
+        }
+
+        /* For medium screens */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .navbar-toggler {
+                display: none;
+            }
+
+        .navbar-brand {
+                text-align: center;
+                width: 100%;
+                order: -1;
+            }
+
+            .navbar-collapse {
+                text-align: center;
+                width: 100%;
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+            .navbar-nav .nav-item {
+                margin-right: 20px;
+            }
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* For larger screens  */
+        @media (min-width: 1200px) {
+            .navbar-toggler {
+                display: none;
+            }
+            .navbar-brand {
+                text-align: center;
+                width: 100%;
+                order: -2;
+            }
+            .navbar-collapse {
+                text-align: center;
+                width: 100%;
+            }
+            .navbar-nav {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .navbar-nav .nav-item {
+                margin-right: 20px;
+            }
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b id="brand">Syzy Technologies</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ContactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ContactDropdown">
+                            <li><a class="dropdown-item" href="https://maps.app.goo.gl/xiFk1T14jeMh1ghR9" target="_blank">Address</a></li>
+                            <li><a class="dropdown-item" href="mailto:info@syzytechnologies.com">Email</a></li>
+                            <li><a class="dropdown-item" href="tel:+919842711600">Whatsapp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Login form -->
+    <div class="login-container">
+        <h3 class="text-center mb-4">Sign In</h3>
+        <form>
+            <div class="mb-3">
+                <input type="email" class="form-control input-bottom-border" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control input-bottom-border" id="password" placeholder="Password"
+                    required>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap js and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
